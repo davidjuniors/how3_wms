@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace how3_wms
 {
-    public partial class form_Index : Form
+    public partial class MovimentacaoIndex : Form
     {
-        public form_Index()
+        public MovimentacaoIndex()
         {
             InitializeComponent();
-        }
-
-        private void btnEstoque_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

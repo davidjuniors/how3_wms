@@ -46,16 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ColetaIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ColetaIndex.Designer.cs">
+      <DependentUpon>ColetaIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstoqueIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstoqueIndex.Designer.cs">
+      <DependentUpon>EstoqueIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventarioIndex.Designer.cs">
+      <DependentUpon>InventarioIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovimentacaoIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimentacaoIndex.Designer.cs">
+      <DependentUpon>MovimentacaoIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ColetaIndex.resx">
+      <DependentUpon>ColetaIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstoqueIndex.resx">
+      <DependentUpon>EstoqueIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventarioIndex.resx">
+      <DependentUpon>InventarioIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimentacaoIndex.resx">
+      <DependentUpon>MovimentacaoIndex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

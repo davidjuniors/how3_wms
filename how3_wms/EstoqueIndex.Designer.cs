@@ -1,17 +1,17 @@
 ﻿
 namespace how3_wms
 {
-    partial class form_Index
+    partial class EstoqueIndex
     {
         /// <summary>
-        /// Variável de designer necessária.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpar os recursos que estão sendo usados.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,67 +21,29 @@ namespace how3_wms
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEstoque = new System.Windows.Forms.Button();
-            this.btnColeta = new System.Windows.Forms.Button();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnMovimenta = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coletaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbBottom = new System.Windows.Forms.Label();
+            this.lbId = new System.Windows.Forms.Label();
+            this.lbProduto = new System.Windows.Forms.Label();
+            this.lbQtd = new System.Windows.Forms.Label();
+            this.lbEndereco = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnEstoque
-            // 
-            this.btnEstoque.Location = new System.Drawing.Point(38, 46);
-            this.btnEstoque.Name = "btnEstoque";
-            this.btnEstoque.Size = new System.Drawing.Size(196, 69);
-            this.btnEstoque.TabIndex = 0;
-            this.btnEstoque.Text = "Estoque";
-            this.btnEstoque.UseVisualStyleBackColor = true;
-            this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
-            // 
-            // btnColeta
-            // 
-            this.btnColeta.Location = new System.Drawing.Point(276, 46);
-            this.btnColeta.Name = "btnColeta";
-            this.btnColeta.Size = new System.Drawing.Size(196, 69);
-            this.btnColeta.TabIndex = 1;
-            this.btnColeta.Text = "Coletar";
-            this.btnColeta.UseVisualStyleBackColor = true;
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.Location = new System.Drawing.Point(276, 153);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(196, 69);
-            this.btnInventario.TabIndex = 3;
-            this.btnInventario.Text = "Inventário";
-            this.btnInventario.UseVisualStyleBackColor = true;
-            // 
-            // btnMovimenta
-            // 
-            this.btnMovimenta.Location = new System.Drawing.Point(38, 153);
-            this.btnMovimenta.Name = "btnMovimenta";
-            this.btnMovimenta.Size = new System.Drawing.Size(196, 69);
-            this.btnMovimenta.TabIndex = 2;
-            this.btnMovimenta.Text = "Movimentação";
-            this.btnMovimenta.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -91,8 +53,8 @@ namespace how3_wms
             this.sistemaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(509, 28);
-            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "wmsMenu";
             // 
             // arquivoToolStripMenuItem
@@ -106,6 +68,30 @@ namespace how3_wms
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
+            // estoqueToolStripMenuItem
+            // 
+            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.estoqueToolStripMenuItem.Text = "Estoque";
+            // 
+            // coletaToolStripMenuItem
+            // 
+            this.coletaToolStripMenuItem.Name = "coletaToolStripMenuItem";
+            this.coletaToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.coletaToolStripMenuItem.Text = "Coleta";
+            // 
+            // movimentaçãoToolStripMenuItem
+            // 
+            this.movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
+            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.movimentaçãoToolStripMenuItem.Text = "Movimentação";
+            // 
+            // inventárioToolStripMenuItem
+            // 
+            this.inventárioToolStripMenuItem.Name = "inventárioToolStripMenuItem";
+            this.inventárioToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.inventárioToolStripMenuItem.Text = "Inventário";
+            // 
             // sistemaToolStripMenuItem
             // 
             this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -115,65 +101,66 @@ namespace how3_wms
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
-            // estoqueToolStripMenuItem
-            // 
-            this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.estoqueToolStripMenuItem.Text = "Estoque";
-            // 
-            // coletaToolStripMenuItem
-            // 
-            this.coletaToolStripMenuItem.Name = "coletaToolStripMenuItem";
-            this.coletaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.coletaToolStripMenuItem.Text = "Coleta";
-            // 
-            // movimentaçãoToolStripMenuItem
-            // 
-            this.movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
-            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.movimentaçãoToolStripMenuItem.Text = "Movimentação";
-            // 
-            // inventárioToolStripMenuItem
-            // 
-            this.inventárioToolStripMenuItem.Name = "inventárioToolStripMenuItem";
-            this.inventárioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.inventárioToolStripMenuItem.Text = "Inventário";
-            // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
-            // lbBottom
+            // lbId
             // 
-            this.lbBottom.AutoSize = true;
-            this.lbBottom.Location = new System.Drawing.Point(139, 250);
-            this.lbBottom.Name = "lbBottom";
-            this.lbBottom.Size = new System.Drawing.Size(233, 17);
-            this.lbBottom.TabIndex = 5;
-            this.lbBottom.Text = "Gerênciamento de Estoques - 2021";
+            this.lbId.AutoSize = true;
+            this.lbId.Location = new System.Drawing.Point(35, 42);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(21, 17);
+            this.lbId.TabIndex = 6;
+            this.lbId.Text = "ID";
             // 
-            // form_Index
+            // lbProduto
+            // 
+            this.lbProduto.AutoSize = true;
+            this.lbProduto.Location = new System.Drawing.Point(89, 42);
+            this.lbProduto.Name = "lbProduto";
+            this.lbProduto.Size = new System.Drawing.Size(58, 17);
+            this.lbProduto.TabIndex = 7;
+            this.lbProduto.Text = "Produto";
+            // 
+            // lbQtd
+            // 
+            this.lbQtd.AutoSize = true;
+            this.lbQtd.Location = new System.Drawing.Point(554, 42);
+            this.lbQtd.Name = "lbQtd";
+            this.lbQtd.Size = new System.Drawing.Size(82, 17);
+            this.lbQtd.TabIndex = 8;
+            this.lbQtd.Text = "Quantidade";
+            // 
+            // lbEndereco
+            // 
+            this.lbEndereco.AutoSize = true;
+            this.lbEndereco.Location = new System.Drawing.Point(678, 42);
+            this.lbEndereco.Name = "lbEndereco";
+            this.lbEndereco.Size = new System.Drawing.Size(69, 17);
+            this.lbEndereco.TabIndex = 9;
+            this.lbEndereco.Text = "Endereço";
+            // 
+            // EstoqueIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 292);
-            this.Controls.Add(this.lbBottom);
-            this.Controls.Add(this.btnInventario);
-            this.Controls.Add(this.btnMovimenta);
-            this.Controls.Add(this.btnColeta);
-            this.Controls.Add(this.btnEstoque);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbEndereco);
+            this.Controls.Add(this.lbQtd);
+            this.Controls.Add(this.lbProduto);
+            this.Controls.Add(this.lbId);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "form_Index";
-            this.Text = "Gerencia Estoque C# (WMS)";
+            this.Name = "EstoqueIndex";
+            this.Text = "Estoque";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,10 +170,6 @@ namespace how3_wms
 
         #endregion
 
-        private System.Windows.Forms.Button btnEstoque;
-        private System.Windows.Forms.Button btnColeta;
-        private System.Windows.Forms.Button btnInventario;
-        private System.Windows.Forms.Button btnMovimenta;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estoqueToolStripMenuItem;
@@ -196,7 +179,9 @@ namespace how3_wms
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.Label lbBottom;
+        private System.Windows.Forms.Label lbId;
+        private System.Windows.Forms.Label lbProduto;
+        private System.Windows.Forms.Label lbQtd;
+        private System.Windows.Forms.Label lbEndereco;
     }
 }
-
