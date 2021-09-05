@@ -16,5 +16,10 @@ namespace how3_wms
         {
             InitializeComponent();
         }
+
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
