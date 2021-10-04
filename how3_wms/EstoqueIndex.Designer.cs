@@ -38,11 +38,13 @@ namespace how3_wms
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbId = new System.Windows.Forms.Label();
-            this.lbProduto = new System.Windows.Forms.Label();
-            this.lbQtd = new System.Windows.Forms.Label();
-            this.lbEndereco = new System.Windows.Forms.Label();
+            this.dgEstoque = new System.Windows.Forms.DataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEstoque)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -113,56 +115,62 @@ namespace how3_wms
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
-            // lbId
+            // dgEstoque
             // 
-            this.lbId.AutoSize = true;
-            this.lbId.Location = new System.Drawing.Point(35, 42);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(21, 17);
-            this.lbId.TabIndex = 6;
-            this.lbId.Text = "ID";
+            this.dgEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEstoque.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnId,
+            this.ColumnProduto,
+            this.ColumnQtd,
+            this.ColumnEndereco});
+            this.dgEstoque.Location = new System.Drawing.Point(12, 31);
+            this.dgEstoque.Name = "dgEstoque";
+            this.dgEstoque.RowHeadersWidth = 51;
+            this.dgEstoque.RowTemplate.Height = 24;
+            this.dgEstoque.Size = new System.Drawing.Size(776, 407);
+            this.dgEstoque.TabIndex = 10;
             // 
-            // lbProduto
+            // ColumnId
             // 
-            this.lbProduto.AutoSize = true;
-            this.lbProduto.Location = new System.Drawing.Point(89, 42);
-            this.lbProduto.Name = "lbProduto";
-            this.lbProduto.Size = new System.Drawing.Size(58, 17);
-            this.lbProduto.TabIndex = 7;
-            this.lbProduto.Text = "Produto";
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.MinimumWidth = 6;
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.Width = 125;
             // 
-            // lbQtd
+            // ColumnProduto
             // 
-            this.lbQtd.AutoSize = true;
-            this.lbQtd.Location = new System.Drawing.Point(554, 42);
-            this.lbQtd.Name = "lbQtd";
-            this.lbQtd.Size = new System.Drawing.Size(82, 17);
-            this.lbQtd.TabIndex = 8;
-            this.lbQtd.Text = "Quantidade";
+            this.ColumnProduto.HeaderText = "Produto";
+            this.ColumnProduto.MinimumWidth = 6;
+            this.ColumnProduto.Name = "ColumnProduto";
+            this.ColumnProduto.Width = 125;
             // 
-            // lbEndereco
+            // ColumnQtd
             // 
-            this.lbEndereco.AutoSize = true;
-            this.lbEndereco.Location = new System.Drawing.Point(678, 42);
-            this.lbEndereco.Name = "lbEndereco";
-            this.lbEndereco.Size = new System.Drawing.Size(69, 17);
-            this.lbEndereco.TabIndex = 9;
-            this.lbEndereco.Text = "Endereço";
+            this.ColumnQtd.HeaderText = "Qtd";
+            this.ColumnQtd.MinimumWidth = 6;
+            this.ColumnQtd.Name = "ColumnQtd";
+            this.ColumnQtd.Width = 125;
+            // 
+            // ColumnEndereco
+            // 
+            this.ColumnEndereco.HeaderText = "Endereço";
+            this.ColumnEndereco.MinimumWidth = 6;
+            this.ColumnEndereco.Name = "ColumnEndereco";
+            this.ColumnEndereco.Width = 125;
             // 
             // EstoqueIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbEndereco);
-            this.Controls.Add(this.lbQtd);
-            this.Controls.Add(this.lbProduto);
-            this.Controls.Add(this.lbId);
+            this.Controls.Add(this.dgEstoque);
             this.Controls.Add(this.menuStrip1);
             this.Name = "EstoqueIndex";
             this.Text = "Estoque";
+            this.Load += new System.EventHandler(this.EstoqueIndex_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEstoque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,9 +187,10 @@ namespace how3_wms
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.Label lbId;
-        private System.Windows.Forms.Label lbProduto;
-        private System.Windows.Forms.Label lbQtd;
-        private System.Windows.Forms.Label lbEndereco;
+        private System.Windows.Forms.DataGridView dgEstoque;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnProduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQtd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEndereco;
     }
 }

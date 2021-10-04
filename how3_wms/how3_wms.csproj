@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +58,18 @@
     </Compile>
     <Compile Include="EstoqueIndex.Designer.cs">
       <DependentUpon>EstoqueIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosIndex.Designer.cs">
+      <DependentUpon>PedidosIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutosIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdutosIndex.Designer.cs">
+      <DependentUpon>ProdutosIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
@@ -83,6 +96,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EstoqueIndex.resx">
       <DependentUpon>EstoqueIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosIndex.resx">
+      <DependentUpon>PedidosIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdutosIndex.resx">
+      <DependentUpon>ProdutosIndex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>

@@ -17,6 +17,8 @@ namespace how3_wms
         Thread movimentar;
         Thread inventario;
         Thread estoque;
+        Thread produtos;
+        Thread pedidos;
 
         public form_Index()
         {
@@ -70,6 +72,30 @@ namespace how3_wms
         private void Inventario()
         {
             Application.Run(new InventarioIndex());
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            produtos = new Thread(Produtos);
+            produtos.SetApartmentState(ApartmentState.STA);
+            produtos.Start();
+        }
+
+        private void Produtos()
+        {
+            Application.Run(new Produtos());
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            pedidos = new Thread(Pedidos);
+            pedidos.SetApartmentState(ApartmentState.STA);
+            pedidos.Start();
+
+        }
+        private void Pedidos()
+        {
+            Application.Run(new PedidosIndex());
         }
     }
 }

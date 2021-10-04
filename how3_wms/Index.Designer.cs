@@ -43,12 +43,14 @@ namespace how3_wms
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbBottom = new System.Windows.Forms.Label();
+            this.btnProdutos = new System.Windows.Forms.Button();
+            this.btnPedidos = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEstoque
             // 
-            this.btnEstoque.Location = new System.Drawing.Point(38, 46);
+            this.btnEstoque.Location = new System.Drawing.Point(38, 153);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(196, 69);
             this.btnEstoque.TabIndex = 0;
@@ -78,7 +80,7 @@ namespace how3_wms
             // 
             // btnMovimenta
             // 
-            this.btnMovimenta.Location = new System.Drawing.Point(38, 153);
+            this.btnMovimenta.Location = new System.Drawing.Point(512, 153);
             this.btnMovimenta.Name = "btnMovimenta";
             this.btnMovimenta.Size = new System.Drawing.Size(196, 69);
             this.btnMovimenta.TabIndex = 2;
@@ -94,7 +96,7 @@ namespace how3_wms
             this.sistemaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(509, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(737, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "wmsMenu";
             // 
@@ -112,25 +114,25 @@ namespace how3_wms
             // estoqueToolStripMenuItem
             // 
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // coletaToolStripMenuItem
             // 
             this.coletaToolStripMenuItem.Name = "coletaToolStripMenuItem";
-            this.coletaToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.coletaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.coletaToolStripMenuItem.Text = "Coleta";
             // 
             // movimentaçãoToolStripMenuItem
             // 
             this.movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
-            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.movimentaçãoToolStripMenuItem.Text = "Movimentação";
             // 
             // inventárioToolStripMenuItem
             // 
             this.inventárioToolStripMenuItem.Name = "inventárioToolStripMenuItem";
-            this.inventárioToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.inventárioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.inventárioToolStripMenuItem.Text = "Inventário";
             // 
             // sistemaToolStripMenuItem
@@ -145,29 +147,51 @@ namespace how3_wms
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // lbBottom
             // 
             this.lbBottom.AutoSize = true;
-            this.lbBottom.Location = new System.Drawing.Point(139, 250);
+            this.lbBottom.Location = new System.Drawing.Point(254, 249);
             this.lbBottom.Name = "lbBottom";
             this.lbBottom.Size = new System.Drawing.Size(233, 17);
             this.lbBottom.TabIndex = 5;
             this.lbBottom.Text = "Gerênciamento de Estoques - 2021";
             // 
+            // btnProdutos
+            // 
+            this.btnProdutos.Location = new System.Drawing.Point(512, 46);
+            this.btnProdutos.Name = "btnProdutos";
+            this.btnProdutos.Size = new System.Drawing.Size(196, 69);
+            this.btnProdutos.TabIndex = 6;
+            this.btnProdutos.Text = "Produtos";
+            this.btnProdutos.UseVisualStyleBackColor = true;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
+            // 
+            // btnPedidos
+            // 
+            this.btnPedidos.Location = new System.Drawing.Point(38, 46);
+            this.btnPedidos.Name = "btnPedidos";
+            this.btnPedidos.Size = new System.Drawing.Size(196, 69);
+            this.btnPedidos.TabIndex = 7;
+            this.btnPedidos.Text = "Pedidos";
+            this.btnPedidos.UseVisualStyleBackColor = true;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
+            // 
             // form_Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 292);
+            this.ClientSize = new System.Drawing.Size(737, 292);
+            this.Controls.Add(this.btnPedidos);
+            this.Controls.Add(this.btnProdutos);
             this.Controls.Add(this.lbBottom);
             this.Controls.Add(this.btnInventario);
             this.Controls.Add(this.btnMovimenta);
@@ -200,6 +224,8 @@ namespace how3_wms
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Label lbBottom;
+        private System.Windows.Forms.Button btnProdutos;
+        private System.Windows.Forms.Button btnPedidos;
     }
 }
 
